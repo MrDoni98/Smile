@@ -49,11 +49,12 @@ class Smile extends PluginBase implements Listener {
   $entity = $e->getPlayer();
   $msg = $e->getMessage();
   if($msg == "smiles"){
+  	$event->setCancelled();
   	$entity->sendMessage(F::YELLOW. ":smile: => ☺, <3 => §4♥§r, :grinning: => §4(°ᴥ°)§r, :wink: => §b°ᴥᵔ§r");
   	$entity->sendMessage(F::YELLOW. ":smiley: => §3ᵔᴥᵔ§r, :blush: => §6ﭢ§r, :unknow: => §a▔\▁(ヅ)▁/▔§r, :ak47: => §4︻┳デ═一§r");
   	$entity->sendMessage(F::YELLOW. ":flushed: => §d⊙.⊙§r, :cloud: => §b☁§r, :nice: => §4(｡◕‿‿◕｡)§r, :panda: => §l(✪㉨✪)§r");
   	$entity->sendMessage(F::YELLOW. ":bear: => ʕ•ᴥ•ʔ, :cry: => ب_ب, :worry: => ◘_◘");
   }
-  }
+  
  }
 }
