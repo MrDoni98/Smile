@@ -4,6 +4,7 @@ namespace MrDoni98;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
+use pocketmine\event\player\PlayerCommandPreprocessEvent;
 use pocketmine\entity\Entity;
 use pocketmine\event\Listener;
 use pocketmine\Player;
